@@ -1,26 +1,25 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function PostCard({ img, username, caption, dp, date }) {
   return (
     <>
       <div className="w-full">
-        <div className="py-3 h-auto flex font-semibold items-center justify-between">
-          {/* <Link to={`/${username}`} className="hover:cursor"> */}
-          <div className="flex font-semibold items-center gap-3 md:gap-6">
-            <img src={dp} alt="" className="w-10 md:w-15 rounded-full" />
-            <p className="md:text-lg">{username}</p>
-          </div>
-          {/* </Link> */}
+        <div className="pt-3 pb-1 h-auto flex font-semibold items-center justify-between">
+          <Link to={`/${username}`} className="hover:cursor">
+            <div className="px-3  flex font-semibold items-center gap-3 md:gap-6">
+              <img src={dp} alt="" className="w-10 md:w-15 rounded-full" />
+              <p className="md:text-lg">{username}</p>
+            </div>
+          </Link>
 
-          <div className="w-5 block md:hidden">
+          <div className="w-5 mr-3 block md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               fill="black"
               class="bi bi-three-dots-vertical"
-              viewBox="0 0 16 16"
-            >
+              viewBox="0 0 16 16">
               <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
             </svg>
           </div>
@@ -32,8 +31,7 @@ function PostCard({ img, username, caption, dp, date }) {
               height="28"
               fill="black"
               class="bi bi-three-dots-vertical"
-              viewBox="0 0 16 16"
-            >
+              viewBox="0 0 16 16">
               <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
             </svg>
           </div>
@@ -45,12 +43,15 @@ function PostCard({ img, username, caption, dp, date }) {
           alt={username}
         />
 
-        <div className="md:text-lg my-2 md:my-3">
-          <span className="font-semibold my-2 mr-1">{username}</span>
+        <div className="px-3 md:text-lg my-2 md:my-3">
+          <Link to={`/${username}`} className="hover:cursor">
+            <span className="font-semibold my-2 mr-1">{username}</span>
+          </Link>
+
           {caption}
         </div>
 
-        <div className="flex justify-between items-center mt-2 md:hidden">
+        <div className="px-2 flex justify-between items-center mt-2 md:hidden">
           <div className="flex gap-4 items-center ">
             <div className="cursor-pointer">
               <svg
@@ -58,8 +59,7 @@ function PostCard({ img, username, caption, dp, date }) {
                 height="35"
                 viewBox="0 0 24 24"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -80,8 +80,7 @@ function PostCard({ img, username, caption, dp, date }) {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-              >
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
                 <title>comment-4</title>
                 <desc>Created with Sketch Beta.</desc>
                 <defs></defs>
@@ -91,19 +90,16 @@ function PostCard({ img, username, caption, dp, date }) {
                   stroke-width="1"
                   fill="none"
                   fill-rule="evenodd"
-                  sketch:type="MSPage"
-                >
+                  sketch:type="MSPage">
                   <g
                     id="Icon-Set"
                     sketch:type="MSLayerGroup"
                     transform="translate(-308.000000, -255.000000)"
-                    fill="#000000"
-                  >
+                    fill="#000000">
                     <path
                       d="M327.494,279.633 L324,284 L320.506,279.633 C314.464,278.355 309.992,273.863 309.992,268.501 C309.992,262.146 316.264,256.994 324,256.994 C331.736,256.994 338.008,262.146 338.008,268.501 C338.008,273.863 333.536,278.355 327.494,279.633 L327.494,279.633 Z M324,255 C315.163,255 308,261.143 308,268.72 C308,274.969 312.877,280.232 319.542,281.889 L324,287.001 L328.459,281.889 C335.123,280.232 340,274.969 340,268.72 C340,261.143 332.837,255 324,255 L324,255 Z"
                       id="comment-4"
-                      sketch:type="MSShapeGroup"
-                    ></path>
+                      sketch:type="MSShapeGroup"></path>
                   </g>
                 </g>
               </svg>
@@ -114,8 +110,7 @@ function PostCard({ img, username, caption, dp, date }) {
                 height="33"
                 viewBox="0 0 24 24"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.5 3.5L3.5 9L10 12L17 7L12 14L15 20.5L20.5 3.5Z"
                   stroke="#000000"
@@ -132,8 +127,7 @@ function PostCard({ img, username, caption, dp, date }) {
               height="30"
               viewBox="0 0 24 24"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z"
                 stroke="#000000"
@@ -145,15 +139,14 @@ function PostCard({ img, username, caption, dp, date }) {
         </div>
 
         <div className="md:flex justify-between items-center mt-2 hidden">
-          <div className="flex gap-4 items-center ">
+          <div className="flex px-3 gap-4 items-center ">
             <div className="cursor-pointer">
               <svg
                 width="50"
                 height="50"
                 viewBox="0 0 24 24"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -174,30 +167,23 @@ function PostCard({ img, username, caption, dp, date }) {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-              >
-                <title>comment-4</title>
-                <desc>Created with Sketch Beta.</desc>
-                <defs></defs>
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
                 <g
                   id="Page-1"
                   stroke="none"
                   stroke-width="1"
                   fill="none"
                   fill-rule="evenodd"
-                  sketch:type="MSPage"
-                >
+                  sketch:type="MSPage">
                   <g
                     id="Icon-Set"
                     sketch:type="MSLayerGroup"
                     transform="translate(-308.000000, -255.000000)"
-                    fill="#000000"
-                  >
+                    fill="#000000">
                     <path
                       d="M327.494,279.633 L324,284 L320.506,279.633 C314.464,278.355 309.992,273.863 309.992,268.501 C309.992,262.146 316.264,256.994 324,256.994 C331.736,256.994 338.008,262.146 338.008,268.501 C338.008,273.863 333.536,278.355 327.494,279.633 L327.494,279.633 Z M324,255 C315.163,255 308,261.143 308,268.72 C308,274.969 312.877,280.232 319.542,281.889 L324,287.001 L328.459,281.889 C335.123,280.232 340,274.969 340,268.72 C340,261.143 332.837,255 324,255 L324,255 Z"
                       id="comment-4"
-                      sketch:type="MSShapeGroup"
-                    ></path>
+                      sketch:type="MSShapeGroup"></path>
                   </g>
                 </g>
               </svg>
@@ -208,8 +194,7 @@ function PostCard({ img, username, caption, dp, date }) {
                 height="50"
                 viewBox="0 0 24 24"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.5 3.5L3.5 9L10 12L17 7L12 14L15 20.5L20.5 3.5Z"
                   stroke="#000000"
@@ -220,14 +205,13 @@ function PostCard({ img, username, caption, dp, date }) {
             </div>
           </div>
 
-          <div>
+          <div className="px-3">
             <svg
               width="50"
               height="50"
               viewBox="0 0 24 24"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z"
                 stroke="#000000"
@@ -238,7 +222,7 @@ function PostCard({ img, username, caption, dp, date }) {
           </div>
         </div>
 
-        <p className="mb-7 font-semibold mt-1 text-sm text-neutral-500">
+        <p className="px-3 mb-7 font-semibold mt-1 text-sm text-neutral-500">
           {date}
         </p>
       </div>

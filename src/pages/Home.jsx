@@ -22,7 +22,7 @@ function Home() {
   const posts = shuffledPosts();
   return (
     <>
-      <div className="md:w-[700px] w-[450px] rounded-lg mx-auto mt-5 mb-10 px-3 py-6">
+      <div className="md:w-[700px] w-full rounded-lg mx-auto mb-10">
         {posts.map((post) => {
           const userDP = Users.find(
             (user) => user.userName === post.userName

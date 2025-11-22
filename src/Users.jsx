@@ -8,6 +8,7 @@ const Users = [
     followers: 2500,
     posts: 150,
     follows: 300,
+    reqAccepted: false,
   },
   {
     name: "Rohan Sharma",
@@ -18,6 +19,7 @@ const Users = [
     followers: 4200,
     posts: 98,
     follows: 500,
+    reqAccepted: false,
   },
   {
     name: "Sneha Kapoor",
@@ -28,6 +30,7 @@ const Users = [
     followers: 3800,
     posts: 120,
     follows: 460,
+    reqAccepted: false,
   },
   {
     name: "Aditya Verma",
@@ -38,6 +41,7 @@ const Users = [
     followers: 150,
     posts: 10,
     follows: 100,
+    reqAccepted: false,
   },
   {
     name: "Priya Singh",
@@ -48,6 +52,7 @@ const Users = [
     followers: 120,
     posts: 8,
     follows: 90,
+    reqAccepted: false,
   },
   {
     name: "Karan Mehta",
@@ -58,6 +63,7 @@ const Users = [
     followers: 5400,
     posts: 105,
     follows: 600,
+    reqAccepted: false,
   },
   {
     name: "Anjali Joshi",
@@ -68,6 +74,7 @@ const Users = [
     followers: 2200,
     posts: 60,
     follows: 280,
+    reqAccepted: false,
   },
   {
     name: "Siddharth Malhotra",
@@ -78,6 +85,7 @@ const Users = [
     followers: 3300,
     posts: 95,
     follows: 400,
+    reqAccepted: false,
   },
   {
     name: "Nisha Patel",
@@ -88,6 +96,7 @@ const Users = [
     followers: 180,
     posts: 12,
     follows: 140,
+    reqAccepted: false,
   },
   {
     name: "Vikram Chauhan",
@@ -98,6 +107,7 @@ const Users = [
     followers: 4000,
     posts: 130,
     follows: 520,
+    reqAccepted: false,
   },
 ];
 

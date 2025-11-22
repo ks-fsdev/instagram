@@ -4,7 +4,7 @@ import UserCard from "../components/UserCard";
 function Requests() {
   return (
     <>
-      <div className="mx-auto w-[400px] text-center my-10">
+      <div className="mx-auto md:w-[700px] w-full px-3 text-center my-10">
         <h1 className="text-3xl text-center  font-black text-black">
           Check your requests!
         </h1>
@@ -14,7 +14,7 @@ function Requests() {
         </p>
       </div>
 
-      <div className="mb-30">
+      <div className="mb-30 px-3 mx-auto md:w-[700px] w-full ">
         {users.map((user) => (
           <UserCard
             img={user.img}
