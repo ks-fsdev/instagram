@@ -1,11 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function UserCard({ img, name, prof, username, isAccepted }) {
-  let [reqAccepted, reqAcceptedStatus] = useState(isAccepted);
-  function requestHandler() {
-    reqAcceptedStatus((prev) => !prev);
-  }
+function UserCard({ img, name, prof, username, isAccepted, onToggle }) {
   return (
     <>
       <div className="w-full">
@@ -24,15 +19,15 @@ function UserCard({ img, name, prof, username, isAccepted }) {
             </div>
           </Link>
           <div className="">
-            {reqAccepted ? (
+            {isAccepted ? (
               <button
-                onClick={requestHandler}
+                onClick={onToggle}
                 className="bg-neutral-300 text-neutral-700 w-full rounded-lg px-5 py-2 text-sm sm:text-md font-medium">
                 Cancel
               </button>
             ) : (
               <button
-                onClick={requestHandler}
+                onClick={onToggle}
                 className="bg-blue-600 text-white w-full rounded-lg px-5 py-2 text-sm sm:text-md font-medium cursor-pointer active:scale-[0.99] active:bg-blue-800">
                 Accept
               </button>
